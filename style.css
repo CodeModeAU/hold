@@ -1,0 +1,149 @@
+/* Hold — matches the app's visual tokens (Theme.swift / polish-pass design doc). */
+
+:root {
+  --bg: #0A0A0F;
+  --surface: #15151C;
+  --accent: #59FF8C;
+  --gold: #FFD23D;
+  --hairline: rgba(255, 255, 255, 0.07);
+  --text: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.48);
+  --text-dim: rgba(255, 255, 255, 0.30);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  max-width: 560px;
+  padding: 72px 28px 48px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  border: 1px solid var(--hairline);
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin: 28px 0 0;
+  line-height: 1;
+}
+
+.underline {
+  width: 64px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 16px rgba(89, 255, 140, 0.6);
+  margin-top: 18px;
+}
+
+.tagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  margin-top: 22px;
+  text-transform: uppercase;
+}
+
+.blurb {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  max-width: 400px;
+  margin: 40px 0 0;
+}
+
+.blurb b { color: var(--text); }
+
+.manifesto {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 28px 0 0;
+  color: var(--text-dim);
+}
+
+.manifesto .louder { color: var(--text-secondary); }
+
+.soon {
+  display: inline-block;
+  margin-top: 44px;
+  padding: 13px 24px;
+  border: 1px solid rgba(89, 255, 140, 0.35);
+  border-radius: 16px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--hairline);
+  margin: 48px 0 0;
+}
+
+.links {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: #86FFC2; }
+
+footer {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.2);
+  padding: 24px;
+  margin-top: auto;
+}
+
+/* Privacy page */
+.prose {
+  text-align: left;
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.prose h1 { font-size: 32px; letter-spacing: 2px; text-align: center; }
+.prose .updated {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-dim);
+  text-align: center;
+  margin-top: 10px;
+}
+.prose ul { padding-left: 22px; }
+.prose li { margin-bottom: 10px; }
+.prose b { color: var(--text); }
