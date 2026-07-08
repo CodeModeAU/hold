@@ -115,6 +115,21 @@ hr {
 a { color: var(--accent); text-decoration: none; }
 a:hover { color: #86FFC2; }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.social svg { width: 17px; height: 17px; }
+
 footer {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
